@@ -12,7 +12,8 @@ services:
       - "8888"
     volumes:
       - nodeos-data-volume:/opt/eosio/bin/data-dir
-      - /home/guochen/Desktop:/hostdata
+      - /Users/guoguo/Desktop:/hostdata
+      # - /home/guochen/Desktop:/hostdata
 
   keosd:
     image: eosio/eos:latest
@@ -22,7 +23,8 @@ services:
       - nodeosd
     volumes:
       - keosd-data-volume:/opt/eosio/bin/data-dir
-      - /home/guochen/Desktop:/hostdata
+      - /Users/guoguo/Desktop:/hostdata
+      # - /home/guochen/Desktop:/hostdata
 
 volumes:
   nodeos-data-volume:
