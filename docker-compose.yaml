@@ -2,7 +2,8 @@ version: "3"
 
 services:
   nodeosd:
-    image: eosio/eos:latest
+    # image: eosio/eos:latest
+    image: eosio/eos:v1.2.3
     command: /opt/eosio/bin/nodeosd.sh --http-validate-host=false -e
     hostname: nodeosd
     ports:
@@ -16,7 +17,8 @@ services:
       # - /home/guochen/Desktop:/hostdata
 
   keosd:
-    image: eosio/eos:latest
+    # image: eosio/eos:latest
+    image: eosio/eos:v1.2.3
     command: /opt/eosio/bin/keosd --http-validate-host=false
     hostname: keosd
     links:
