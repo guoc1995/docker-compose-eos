@@ -4,7 +4,7 @@ services:
   nodeosd:
     # image: eosio/eos:latest
     image: eosio/eos:v1.2.3
-    command: /opt/eosio/bin/nodeosd.sh --http-validate-host=false -e
+    command: /opt/eosio/bin/nodeosd.sh --http-validate-host=false -e --contracts-console
     hostname: nodeosd
     ports:
       - 8888:8888
